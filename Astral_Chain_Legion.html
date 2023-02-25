@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>Astral chain Legions</title>
+<style>
+body {
+  background-image: url('images/flame.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  border:1px solid black;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* only for demonstration, should be removed */
+  padding: 20px;
+  border:1px solid black;
+
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 500px; /* only for demonstration, should be removed */
+ border:1px solid black;
+
+}
+
+
+
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+<h3>Legions from astral chains</h3>
+
+</header>
+
+<section>
+  <nav>
+    <ul>
+     <li><a href="Brian's_website.html">Home Page</a></li>
+      <li><a href="My_favorite_music.html">Favorute Music</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+  
+<h2>Legions</h2>
+
+
+<img id="legion" src="images/Astral_Chain.jpeg" width= 300 length =400  >
+
+<p id="legion-name"></p>
+
+
+<p>
+<button type="button" onclick="legion(1)">Sword</button>
+<button type="button" onclick="legion(2)">Arrow</button>
+<button type="button" onclick="legion(3)">Arm </button>
+<button type="button" onclick="legion(4)">Beast</button>
+<button type="button" onclick="legion(5)">Axe</button>
+
+</p>
+
+  <script> 
+function legion(hs){
+ var pic;
+
+switch (hs) {
+  case 1:
+  	pic="images/Astral_Chain_Sword_Legion.jpeg";
+document.getElementById("legion-name").innerHTML = "Sword Legion";
+
+    break;
+  case 2:
+  	pic="images/Astral_Chain_Arrow_Legion.jpeg";
+document.getElementById("legion-name").innerHTML = "Arrow Legion";
+
+    break;
+  case 3:
+  	pic= "images/Astral_Chain_Arm_Legion.jpeg";
+document.getElementById("legion-name").innerHTML = "Arm Legion";
+
+    break;
+  case 4:
+  	pic="images/Astral_Chain_Beast_Legion.jpeg";
+document.getElementById("legion-name").innerHTML = "Beast Legion";
+
+    break;
+  case 5:
+  	pic="images/Astral_Chain_Axe_Legion.jpeg";
+document.getElementById("legion-name").innerHTML = "Axe Legion";
+
+    break;
+
+}
+  document.getElementById('legion').src = pic;
+
+
+}
+
+
+
+</script>
+
+
+</article>
+
+
+
+</section>
+
+<footer>
+<!--videp-->
+
+</footer>
+</body>
+
+</html>
