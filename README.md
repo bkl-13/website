@@ -1,4 +1,4 @@
-# Brian Le – Personal Portfolio Website
+# Brian Le – Personal Website
 
 Welcome to my personal portfolio website!  
 This site is a reflection of who I am as a developer and what I bring to the table — combining clean design, responsive layout, and core front-end technologies.
